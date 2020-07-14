@@ -11,7 +11,10 @@ public class Tute2
     
     public void init()
     {
-        
+        System.out.print("Input two integers: ");
+        int i1 = scan.nextInt();
+        int i2 = scan.nextInt();
+        System.out.println("Random Number: " + random(i1,i2));
     }
     
     public static void main(String [] args)
