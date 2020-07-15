@@ -32,12 +32,16 @@ public class Tute2
         char c = scan.nextLine().toCharArray()[0];
         System.out.println("Character Count: " + strSearch(str,c)); */
         
-        System.out.print("Input string: ");
+        /* System.out.print("Input string: ");
         String str = scan.nextLine();
         System.out.println("");
         System.out.print("Input character to remove: ");
         char c = scan.nextLine().toCharArray()[0];
-        System.out.println("New String: " + strRemove(str,c));
+        System.out.println("New String: " + strRemove(str,c)); */
+        
+        for (Day day : Day.values()) {
+            System.out.println(day);
+        }
     }
     
     public static void main(String [] args)
