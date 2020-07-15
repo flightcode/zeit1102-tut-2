@@ -8,6 +8,15 @@ import java.util.*;
 public class Tute2
 {
     Scanner scan = new Scanner(System.in);
+    enum Day {
+        Monday, 
+        Tuesday, 
+        Wednesday, 
+        Thursday, 
+        Friday, 
+        Saturday, 
+        Sunday
+    }
     
     public void init()
     {
