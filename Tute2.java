@@ -15,12 +15,20 @@ public class Tute2
         int i1 = scan.nextInt();
         int i2 = scan.nextInt();
         System.out.println("Random Number: " + random(i1,i2)); */
-        System.out.print("Input string: ");
+        
+        /* System.out.print("Input string: ");
         String str = scan.nextLine();
         System.out.println("");
         System.out.print("Input character to count: ");
         char c = scan.nextLine().toCharArray()[0];
-        System.out.println("Character Count: " + strSearch(str,c));
+        System.out.println("Character Count: " + strSearch(str,c)); */
+        
+        System.out.print("Input string: ");
+        String str = scan.nextLine();
+        System.out.println("");
+        System.out.print("Input character to remove: ");
+        char c = scan.nextLine().toCharArray()[0];
+        System.out.println("New String: " + strRemove(str,c));
     }
     
     public static void main(String [] args)
@@ -62,5 +70,20 @@ public class Tute2
             }
         }
         return(i);
+    }
+    
+    String strRemove(String str, char c)
+    {
+        String newStr = "";
+        char[] arr = str.toCharArray();
+        
+        for(char character : arr)
+        {
+            if(character != c)
+            {
+                newStr += character;
+            }
+        }
+        return(newStr);
     }
 }

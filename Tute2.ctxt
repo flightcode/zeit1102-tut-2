@@ -8,4 +8,6 @@ comment3.params=i1\ i2
 comment3.target=int\ random(int,\ int)
 comment4.params=str\ c
 comment4.target=int\ strSearch(java.lang.String,\ char)
-numComments=5
+comment5.params=str\ c
+comment5.target=java.lang.String\ strRemove(java.lang.String,\ char)
+numComments=6
