@@ -42,4 +42,19 @@ public class Tute2
         }
         return r.nextInt(high - low) + low;
     }
+    
+    int strSearch(String str, char c)
+    {
+        int i = 0;
+        char[] arr = str.toCharArray();
+        
+        for(char character : arr)
+        {
+            if(character == c)
+            {
+                i+=1;
+            }
+        }
+        return(i);
+    }
 }
