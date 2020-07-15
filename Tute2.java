@@ -11,10 +11,16 @@ public class Tute2
     
     public void init()
     {
-        System.out.print("Input two integers: ");
+        /* System.out.print("Input two integers: ");
         int i1 = scan.nextInt();
         int i2 = scan.nextInt();
-        System.out.println("Random Number: " + random(i1,i2));
+        System.out.println("Random Number: " + random(i1,i2)); */
+        System.out.print("Input string: ");
+        String str = scan.nextLine();
+        System.out.println("");
+        System.out.print("Input character to count: ");
+        char c = scan.nextLine().toCharArray()[0];
+        System.out.println("Character Count: " + strSearch(str,c));
     }
     
     public static void main(String [] args)
