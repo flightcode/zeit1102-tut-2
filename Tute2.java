@@ -1,102 +1,79 @@
-/**
- * @Elliot Parker
- * @2020-07-15
- */
-
 import java.util.*;
 
-public class Tute2
-{
+public class Tute2 {
     Scanner scan = new Scanner(System.in);
+
     enum Day {
-        Monday, 
-        Tuesday, 
-        Wednesday, 
-        Thursday, 
-        Friday, 
-        Saturday, 
-        Sunday
+        Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday
     }
-    
-    public void init()
-    {
-        /* System.out.print("Input two integers: ");
-        int i1 = scan.nextInt();
-        int i2 = scan.nextInt();
-        System.out.println("Random Number: " + random(i1,i2)); */
-        
-        /* System.out.print("Input string: ");
-        String str = scan.nextLine();
-        System.out.println("");
-        System.out.print("Input character to count: ");
-        char c = scan.nextLine().toCharArray()[0];
-        System.out.println("Character Count: " + strSearch(str,c)); */
-        
-        /* System.out.print("Input string: ");
-        String str = scan.nextLine();
-        System.out.println("");
-        System.out.print("Input character to remove: ");
-        char c = scan.nextLine().toCharArray()[0];
-        System.out.println("New String: " + strRemove(str,c)); */
-        
+
+    public static void main(String[] args) {
+        Tute2 t2 = new Tute2();
+        t2.init();
+    }
+
+    public void init() {
+        /*
+         * System.out.print("Input two integers: "); int i1 = scan.nextInt(); int i2 =
+         * scan.nextInt(); System.out.println("Random Number: " + random(i1,i2));
+         */
+
+        /*
+         * System.out.print("Input string: "); String str = scan.nextLine();
+         * System.out.println(""); System.out.print("Input character to count: "); char
+         * c = scan.nextLine().toCharArray()[0]; System.out.println("Character Count: "
+         * + strSearch(str,c));
+         */
+
+        /*
+         * System.out.print("Input string: "); String str = scan.nextLine();
+         * System.out.println(""); System.out.print("Input character to remove: "); char
+         * c = scan.nextLine().toCharArray()[0]; System.out.println("New String: " +
+         * strRemove(str,c));
+         */
+
         for (Day day : Day.values()) {
             System.out.println(day);
         }
     }
-    
-    public static void main(String [] args)
-    {
-        Tute2 t2 = new Tute2();
-        t2.init();
-    }
-    
-    int random(int i1, int i2)
-    {
+
+    int random(int i1, int i2) {
         Random r = new Random();
         int low;
         int high;
-        if(i1 > i2)
-        {
+        if (i1 > i2) {
             high = i1;
             low = i2;
-        } else if(i2 > i1)
-        {
+        } else if (i2 > i1) {
             high = i2;
             low = i1;
-        } else
-        {
+        } else {
             return 0;
         }
         return r.nextInt(high - low) + low;
     }
-    
-    int strSearch(String str, char c)
-    {
+
+    int strSearch(String str, char c) {
         int i = 0;
         char[] arr = str.toCharArray();
-        
-        for(char character : arr)
-        {
-            if(character == c)
-            {
-                i+=1;
+
+        for (char character : arr) {
+            if (character == c) {
+                i += 1;
             }
         }
-        return(i);
+        return (i);
     }
-    
-    String strRemove(String str, char c)
-    {
+
+    String strRemove(String str, char c) {
         String newStr = "";
         char[] arr = str.toCharArray();
-        
-        for(char character : arr)
-        {
-            if(character != c)
-            {
+
+        for (char character : arr) {
+            if (character != c) {
                 newStr += character;
             }
         }
-        return(newStr);
+        return (newStr);
     }
 }
